@@ -8,6 +8,12 @@ var path = require("path");
 <% }); -%>
  */
 
+/**
+<% humanReadableBody.split(/\r|\n/).forEach(function (str) { -%>
+ * <%- str %>
+<% }); -%>
+ */
+
 module.exports = function (req, res) {
   res.statusCode = <%- JSON.stringify(res.statusCode) %>;
 
